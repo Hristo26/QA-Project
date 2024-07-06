@@ -9,9 +9,9 @@ public class AddProducts extends TestUtil {
     @Test
     public void AddItemToTheCart(){
        LoginPage loginPage = new LoginPage(driver);
-       ProductsPage addProducts = loginPage.login("standard_user", "secret_sauce");
-       addProducts.addToCartByProductName("backpack");
+       ProductsPage productsPage = loginPage.login("standard_user", "secret_sauce");
+        productsPage.addToCartByProductName("backpack");
 
-        Assert.assertEquals(addProducts.getNumbersInTheCart(), 1, "Because we have one item in the cart.");
+        Assert.assertEquals(productsPage.getNumbersInTheCart(), 1, "Because we have one item in the cart.");
     }
 }
