@@ -35,16 +35,12 @@ public class TestLoginFail extends TestUtil {
     @Test(dataProvider = "users_csv")
     public void LoginFail(String userName, String password) {
 
-
         WebElement userNameInput = driver.findElement(By.id("user-name"));
         userNameInput.clear();
         userNameInput.sendKeys(userName);
 
-
-
-
         WebElement passwordInput = driver.findElement(By.cssSelector("[placeholder=Password]"));
-        userNameInput.clear();
+        passwordInput.clear();
         passwordInput.sendKeys(password);
 
         WebElement loginBtn = driver.findElement(By.name("login-button"));

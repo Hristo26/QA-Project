@@ -12,7 +12,7 @@ public class AddProducts extends TestUtil {
        ProductsPage productsPage = loginPage.login("standard_user", "secret_sauce");
        productsPage.addToCartByProductName("backpack");
 
-
         Assert.assertEquals(productsPage.getNumbersInTheCart(), 1, "Because we have one item in the cart.");
     }
+
 }
