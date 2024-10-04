@@ -2,8 +2,9 @@ package base;
 
 import driver.DriverFactory;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,7 +15,7 @@ public class TestUtil {
     private String applicationUrl, browser;
     private int implicitWaitSeconds;
 
-    @BeforeTest
+    @BeforeMethod
     public void setUp() {
        setupBrowserDriver();
        loadInitialPage();
@@ -24,7 +25,7 @@ public class TestUtil {
         driver.get(applicationUrl);
     }
 
-    @AfterTest
+    @AfterMethod
     public void tearDown() {
         driver.quit();
     }

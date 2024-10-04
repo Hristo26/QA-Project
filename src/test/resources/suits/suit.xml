@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "hppt://testng.org/testng-1.0.dtd">
+
+<suite thread-count="2" verbose="1" name="QA Project1"
+       annotations="JDK" parallel="tests">
+
+    <test name=" Login Test Suite">
+        <packages>
+            <package name="com.selenium.*"/>
+        </packages>
+    </test>
+
+
+    <!--   <test name="Add Products Test suit">-->
+    <!--   <classes>-->
+    <!--      <class name="com.selenium.AddProducts"/>-->
+    <!-- </classes>-->
+<!--</test>-->
+
+</suite>

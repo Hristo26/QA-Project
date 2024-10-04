@@ -2670,3 +2670,9 @@ Q.idea/sonarlint/securityhotspotstore/9/5/95293ce6bb57e1b83d68730aec24af6e16b4ab
 Q.idea/sonarlint/securityhotspotstore/9/5/953b36770706abf7330309dff5ef8a74fa150977,b\4\b4cdb3f759b3ddf7c21dbb20fddd0b55eae60548
 Å
 Q.idea/sonarlint/securityhotspotstore/9/b/9b88d6ee8fe9be9858fb82552a907e49fe60110a,b\4\b46e5d735b68ce7b65b842b8eb7a83f8a313b709
+i
+9src/test/java/com/selenium/course/tests/ProductTests.java,5\1\51bf97f2833f3aefa126aa17b737a569b132e784
+_
+/src/test/java/com/selenium/SortProductsA_Z.java,9\d\9db60d8e42723a7db37c0e2d45b635fcfcfeedd4
+^
+.src/test/java/com/selenium/sortProductsAZ.java,e\7\e7f61167c673d900ab61499ec0a7a51361ce6257

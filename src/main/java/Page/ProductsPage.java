@@ -26,8 +26,8 @@ public class ProductsPage {
         String xpathOfItemToBeAdded = String.format(ADD_TO_CARD_LOCATOR, productName);
         WebElement addToCartBtn = driver.findElement(By.xpath(xpathOfItemToBeAdded));
         addToCartBtn.click();
-    }
 
+    }
     public int getNumbersInTheCart(){
         return Integer.parseInt(shoppingCartImage.getText());
     }
